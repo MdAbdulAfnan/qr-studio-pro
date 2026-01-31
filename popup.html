@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>QR Studio</title>
+
+<link rel="stylesheet" href="popup.css">
+<link href="https://fonts.googleapis.com/css2?
+family=Poppins:wght@600&
+family=Montserrat:wght@600&
+family=Playfair+Display:wght@700&
+family=Inter:wght@600&
+family=Lato:wght@600&
+family=Raleway:wght@600&
+family=Source+Sans+3:wght@600&
+family=Manrope:wght@600&
+family=DM+Sans:wght@600&
+family=Libre+Baskerville:wght@700&
+display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="header">
+  <div class="logo-title">
+    <img src="icons/icon128.png" class="logo" alt="Logo">
+    <span class="app-title">QR Studio Pro</span>
+  </div>
+
+  <button id="closeBtn" class="close-btn">
+    ✕
+  </button>
+</div>
+
+
+<input id="qrInput" placeholder="Enter URL or text">
+
+<label>Design Style</label>
+<select id="templateSelect"></select>
+
+<label>Gradient Mode</label>
+<select id="gradientStyle">
+  <option value="linear">Smooth Linear</option>
+  <option value="radial">Radial Glow</option>
+  <option value="diagonal">Diagonal Flow</option>
+  <option value="vertical">Vertical Fade</option>
+  <option value="horizontal">Horizontal Flow</option>
+  <option value="soft">Soft Blend</option>
+  <option value="bold">Bold Contrast</option>
+  <option value="mirror">Mirror Gradient</option>
+</select>
+
+
+<label>Dot Style</label>
+<select id="dotStyle">
+  <option value="rounded">Rounded</option>
+  <option value="square">Square</option>
+  <option value="dots">Dots</option>
+  <option value="extra-rounded">Extra Rounded</option>
+  <option value="classy">Classy</option>
+  <option value="classy-rounded">Classy Rounded</option>
+</select>
+
+<label>Eye Frame Style</label>
+<select id="eyeFrameStyle">
+  <option value="square">Square</option>
+  <option value="dot">Circle</option>
+  <option value="extra-rounded">Rounded</option>
+</select>
+
+<label>Eye Center Style</label>
+<select id="eyeDotStyle">
+  <option value="square">Square</option>
+  <option value="dot">Circle</option>
+</select>
+
+<div id="qrContainer"></div>
+
+<label>Bottom Text</label>
+<input id="bottomText" placeholder="Scan to visit">
+
+<label>Font (Frame Text Only)</label>
+<select id="fontSelect">
+  <option value="Inter">Inter (Apple)</option>
+  <option value="Poppins">Poppins</option>
+  <option value="Montserrat">Montserrat</option>
+  <option value="Manrope">Manrope</option>
+  <option value="DM Sans">DM Sans</option>
+  <option value="Lato">Lato</option>
+  <option value="Raleway">Raleway</option>
+  <option value="Source Sans 3">Source Sans</option>
+  <option value="Playfair Display">Playfair Display</option>
+  <option value="Libre Baskerville">Libre Baskerville</option>
+</select>
+
+<button id="downloadCorporate">Download Corporate</button>
+<button id="downloadOnlyQR">Download Only QR (Transparent)</button>
+
+
+<script src="libs/qr-code-styling.js"></script>
+<script src="popup.js"></script>
+
+</body>
+</html>
