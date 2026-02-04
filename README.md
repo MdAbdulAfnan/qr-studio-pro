@@ -4,7 +4,7 @@ A premium QR code designer built as a Chrome Extension using JavaScript and Canv
 
 **🚀 Features**
 
--> 40+ designer color palettes
+-> 30+ designer color palettes
 
 -> Advanced gradient engine (8 modes)
 
